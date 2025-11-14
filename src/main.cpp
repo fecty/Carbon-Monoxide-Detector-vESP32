@@ -1,31 +1,3 @@
-// #include "Arduino.h"
-// #include <Adafruit_GFX.h>
-// #include <Adafruit_SSD1306.h>
-// #include <Adafruit_NeoPixel.h>
-
-// void Print_Concentration();
-// //---------------------Setup--------------------------------------------------------------------
-// void setup()
-// {
-//   Serial.begin(9600);
-//   delay(1000);
-
-//   delay(1000);
-
-//   // Set UART I/O to Mode1
-// }
-// //---------------------Main Loop-----------------------------------------------------------------------------------
-// void loop()
-// {
-
-//   // Recover Mode 1 UART data as it arrives, update concentration, and read_flag state.
-//   // Note: read_flag state will toggle after concentration has been updated.
-
-//   // Print updated concentration level.
-//   Print_Concentration();
-//   // Serial.println("Hello World");
-//   delay(100);
-
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <Adafruit_NeoPixel.h>
@@ -69,7 +41,7 @@ void setup()
   Serial.begin(9600);
   COSerial.begin(9600);
   ZE7_CO.beginMode1();
-  Serial.println("Carbon Monoxide Detector/Decorative Night Light\nZurain Nazir | E: nazirzurain@gmail.com | P: +91 7006775359\nDec. 2024");
+  Serial.println("Carbon Monoxide Detector/Decorative Night Light\nZurain Nazir | E: nazirzurain@gmail.com\nDec. 2024");
 
   // Initialize OLED display
   if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C))
