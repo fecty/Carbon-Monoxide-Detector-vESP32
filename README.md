@@ -1,4 +1,4 @@
-# CODEC-v2: Carbon Monoxide Detector & Decorative Night Light
+# Carbon Monoxide Detector vESP32 (AKA CODEC-2): Carbon Monoxide Detector & Decorative Night Light
 
 ## Project Overview
 
